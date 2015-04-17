@@ -4,4 +4,4 @@ Usage:  lastmod [file]
 
 Example:  lastmod notes
 
-		  File "notes" was last modified 3 days ago
+          File "notes" was last modified 3 days ago
