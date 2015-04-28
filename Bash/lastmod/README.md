@@ -1,7 +1,9 @@
-lastmod: Calculates the last time a file was modified in days.
+###lastmod: Calculates the last time a file or directory was modified in days.
 
-Usage:  lastmod [file] 
+####Usage:  lastmod [file or directory] 
 
-Example:  lastmod notes
+####Example:
 
-          File "notes" was last modified 3 days ago
+	$  ./lastmod notes
+
+	"notes" was last modified 3 days ago
