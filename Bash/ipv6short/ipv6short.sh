@@ -4,9 +4,11 @@
 #
 # Usage:  ipv6short [ip address] 
 #
-# Example: ipv6short 5210:8ff9:0000:0000:184a:41dd:0048:1852
+# Example: $  ./ipv6short 5210:8ff9:0000:0000:184a:41dd:0048:1852
 #
-#          Shortened Address: 5210:8ff9::184a:41dd:48:1852
+#		   Entered Address - 5210:8ff9:0000:0000:184a:41dd:0048:1852
+#
+#          Shortened Address - 5210:8ff9::184a:41dd:48:1852
 #
 # Copyright (c) 2015, Bill Banks Jr
 # All rights reserved.

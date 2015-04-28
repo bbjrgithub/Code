@@ -3,11 +3,12 @@
 # ipbroadcst: Find the broadcast address for an IPv4 address or list of 
 # addresses
 #
-# Usage:  ipbroadcst [ip adress] [netmask] OR ipbroadcst -f [file]
+# Usage:  ipbroadcst [IPv4 adress] [netmask] OR ipbroadcst -f [file]
 #
-# Example: ipbroadcst 192.168.1.1 255.255.255.0
+# Example: $  ./ipbroadcst 192.168.1.1 255.255.255.0
 #
-#      IP: 192.168.1.1 and Netmask: 255.255.0.0 --- Broadcast: 192.168.1.255
+#      	   For IP: 192.168.1.1 and Netmask: 255.255.0.0 --- Broadcast: 
+#		   192.168.1.255
 #
 # Copyright (C) 2015 Bill Banks Jr
 # All rights reserved.

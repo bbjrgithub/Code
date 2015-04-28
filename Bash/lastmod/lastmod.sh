@@ -4,9 +4,9 @@
 #
 # Usage:  lastmod [file] 
 #
-# Example:  lastmod notes
+# Example:  $  ./lastmod notes
 #
-#			File "notes" was last modified 3 days ago
+#			"notes" was last modified 3 days ago
 #
 # Copyright (C) 2015 Bill Banks Jr
 # All rights reserved.
@@ -51,29 +51,31 @@ if [ $# -eq 0 -o $# -gt 1 ]; then
 fi
 
 
-file="$1"
+file_or_directory="$1"
 
-## Check if file is valid
+## Check if file or directory is valid.
 
-if [ ! -f "$file" ]; then
-	echo -e "\nlastmod: File \"$file\" not found or a special file.\n"
+if [ ! -e "$file_or_directory" ]; then
+	echo -e "\nlastmod: File or directory \"$file_or_directory\" not found \
+	or a special file.\n"
 	exit 1
 fi
 
-## Get the time the file was last modified in seconds since Epoch and the
-## current time in seconds since Epoch.
 
-file_mod_time=$(stat -c %Y $file)
+## Get the time the file or directory was last modified in seconds since
+## Epoch and the current time in seconds since Epoch.
+
+file_mod_time=$(stat -c %Y $file_or_directory)
 current_time=$(date +%s)
 
-## Calcuate the days since the file was modified. Adjusts for daylight
-## savings time using printf and bc.
+## Calcuate the days since the file or directory was modified. Adjusts for
+## daylight savings time using printf and bc.
 
 mod_day=$(printf "%.0f" $(echo "scale=2; ($current_time - $file_mod_time\
 	)/(60*60*24)" | bc) )
 
 if [ $mod_day = 1 ]; then
-	echo -e "File \"$file\" was last modified $mod_day day ago"
+	echo -e "\"$file_or_directory\" was last modified $mod_day day ago"
 else
-	echo -e "File \"$file\" was last modified $mod_day days ago"
+	echo -e "\"$file_or_directory\" was last modified $mod_day days ago"
 fi
