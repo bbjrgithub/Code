@@ -5,6 +5,6 @@ Usage:  lastmod [file or directory]
 
 Example:
 
-	$  ./lastmod notes
+	$ ./lastmod notes
 
 	"notes" was last modified 3 days ago

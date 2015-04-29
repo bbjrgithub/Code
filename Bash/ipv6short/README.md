@@ -5,7 +5,7 @@ Usage: ipv6short.sh [ip address]
 
 Example:
 
-	$  ./ipv6short.sh 1848:00d1:0053:36a8:0000:3371:2293:2319
+	$ ./ipv6short.sh 1848:00d1:0053:36a8:0000:3371:2293:2319
 
 	Entered Address - 1848:00d1:0053:36a8:0000:3371:2293:2319
 
