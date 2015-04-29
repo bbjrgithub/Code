@@ -1,8 +1,9 @@
-###lastmod: Calculates the last time a file or directory was modified in days.
+lastmod: Calculates the last time a file or directory was modified in days.
+---------------------------------------------------------------------------
 
-####Usage:  lastmod [file or directory] 
+Usage:  lastmod [file or directory] 
 
-####Example:
+Example:
 
 	$  ./lastmod notes
 
