@@ -127,7 +127,7 @@ exit 1
 ## Check if at least one and no more than two arguments have been entered
 
 if [ $# -eq 0 -o $# -gt 2 ]; then
-	echo -e "\nUsage:  ipbroadcst [ip adress] [netmask] OR ipbroadcst -f \
+	echo -e "\nUsage:  ipbroadcst [ip address] [netmask] OR ipbroadcst -f \
 [file]\n" 1>&2
 	exit 1
 fi
