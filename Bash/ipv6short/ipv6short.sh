@@ -95,14 +95,6 @@ do
 done
 
 
-## Uncomment the below to show the format of the address after STEP 1 has
-## been run
-
-#echo -e "\nShortened Address (leading zeros removed) - ${ip_address[0]} \
-#${ip_address[1]} ${ip_address[2]} ${ip_address[3]} ${ip_address[4]} \
-#${ip_address[5]} ${ip_address[6]} ${ip_address[7]}"
-
-
 
 ## IPv6 ADDRESS TO SHORTER NOTATION - STEP 2: REMOVE CONSECUTIVE SECTIONS OF
 ## ZEROES
@@ -137,13 +129,6 @@ do
 done
 
 
-## Uncomment the below to show the format of the address after STEP 2 has
-## been run
-
-#echo -e "\nShortened Address (consecutive zeros removed) - \
-#${ip_address[0]} ${ip_address[1]} ${ip_address[2]} ${ip_address[3]} \
-#${ip_address[4]} ${ip_address[5]} ${ip_address[6]} ${ip_address[7]}"
-
 
 ##  Add the ":" character back to delimit the ip address
 
@@ -154,12 +139,6 @@ do
 	fi
 done
 
-
-## Uncomment the below to show format of address after ":"'s have been
-## added back in
-
-#echo -e "\nShortened Address (\":\" added back to delimit the address) \
-#- ${ipaddr_string}"	
 
 
 ## If part of the address has ":::" or a larger amount of ":"'s, replace it
